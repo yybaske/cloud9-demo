@@ -1,0 +1,2 @@
+参照：未経験からRuby on Railsを学んで仕事につなげるまでの1000時間メニュー
+https://qiita.com/saboyutaka/items/1a8c40e105e93ac6856a
