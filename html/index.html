@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scala=1.0">
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <title> Chat Sample </title>
+    </head>
+    <body>
+        <!-- 自分とユーザ情報 -->
+        <h3 id="part1" user_id="1">I'm USER1.</h3>
+        <h3 id="part2" thread_id="1"> you </h3>
+        <div id="users">
+            <button class="user" user_id="2">you are USER2.</button>    
+        </div>
+        <br>
+        <div id="your_container">
+            
+            <div id="bms_message_container">
+                <!-- チャットの外側部分 -->
+                <div id="bms_chat_header">
+                
+                    <!-- ステータス -->
+                    <div id="bms_chat_user_status">
+                        
+                        <!-- ステータスアイコン -->
+                        <div id="bms_status_icon">●</div>
+                        <!-- ユーザ名 -->
+                        <div id="bms_chat_user_name">User</div>
+                    </div>
+                </div>
+                
+                <!-- タイムライン部分 -->
+                <div id="bms_messages">
+                    
+                    
+                    <!-- メッセージ1(左) -->
+                    <div class="bms_message_bms_left">
+                        <div class="bms_message_box">
+                            <div class="bms_message_content">
+                                <div class="bms_message_text">Message Text</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- メッセージ1(左) -->
+                    <div class="bms_message_bms_right">
+                        <div class="bms_message_box">
+                            <div class="bms_message_content">
+                                <div class="bms_message_text">Message Text</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bms_clear"></div>
+                </div>
+                <!-- Text Box, Send Button -->
+                <div id="bms_send">
+                    <textarea id="bms_send_message"></textarea>
+                    <div id="bms_send_btn">送信</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
