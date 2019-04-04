@@ -2,6 +2,9 @@
     "build": {
         "@saveall": true
     },
+    "golang": {
+        "@completion": true
+    },
     "instance": {
         "@automaticShutdown": "30"
     },
@@ -21,7 +24,7 @@
         }
     },
     "run": {
-        "@runner": "PHP (built-in web server)",
+        "@runner": "Go",
         "configs": {
             "@inited": "true",
             "json()": {}
