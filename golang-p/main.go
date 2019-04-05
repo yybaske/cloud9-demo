@@ -1,7 +1,7 @@
 package main
 
 import "somepkg"
-import "otherpkg"
+
 import (
 	"fmt"
 )
