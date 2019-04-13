@@ -11,7 +11,7 @@ class AuthenticatedUserAction @Inject() (parser: BodyParsers.Default)(
         
         private val logger = play.api.Logger(this.getClass)
         
-        override def invokeBlock[A](request: Request[A], block: (Request[A]) => Future[Result]) =>
+        override def invokeBlock[A](request: Request[A], block: (Request[A]) => Future[Result]): Future[Result] = {
                 logger.info("ENTERED AuthenticatedUserAction::invokeBlock ...")
                 val maybeUsername = request.session.get(models.Global.SESSION_USERNAME_KEY)
                 maybeUsername match {
